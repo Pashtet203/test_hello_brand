@@ -1,0 +1,162 @@
+@media(max-width: 1172px) {
+    .menu__imgs {
+        // display: none;
+        width: 50%;
+    }
+}
+
+
+@media(max-width: 970px) {
+    .header__navbar-open {
+        display: flex;
+    }
+
+    .header__number {
+        margin-top: 20px;
+    }
+
+    .header__navbar-box {
+        display: none;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: start;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: black;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .header__navbar-item {
+        flex-direction: column;
+        row-gap: 30px;
+        margin-top: 20px;
+        max-width: 40%;
+    }
+
+    .header__navbar-item+.header__navbar-item {
+        margin-left: 0;
+    }
+
+    .menu__inner {
+        justify-content: start;
+        align-items: center;
+    }
+
+    .menu__imgs {
+        // display: none;
+        width: 40%;
+        height: 40%;
+        margin-left: 20px;
+    }
+
+}
+
+@keyframes burgerAnimation {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media(max-width:750px) {
+    .menu__imgs {
+        display: none;
+    }
+}
+
+@media(max-width: 610px) {
+    .header__info-btns {
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+    }
+
+    .header__info_box {
+        margin-top: 20px;
+
+    }
+
+    .header__info-title {
+        font-size: 50px;
+    }
+
+    .header__navbar-open {
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 537px) {
+    .comments__title {
+        font-size: 28px;
+    }
+
+    .comments__text {
+        font-size: 14px;
+    }
+
+    .comments__author {
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 500px) {
+    .header__info-title {
+        font-size: 30px;
+    }
+
+    .comments__title {
+        font-size: 25px;
+    }
+
+    .comments__text {
+        font-size: 12px;
+    }
+
+    .comments__author {
+        font-size: 12px;
+    }
+
+    .comments__img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+}
+
+@media(max-width: 375px) {
+    .comments__title {
+        font-size: 18px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .comments__text {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .comments__author {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .comments__img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+}
